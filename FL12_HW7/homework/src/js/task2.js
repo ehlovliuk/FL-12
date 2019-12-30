@@ -39,7 +39,7 @@ if (firstGameInvitation && confirmGame) {
                 if (winnerMessage) {
                     break;
                 } else {
-                    alert('Thank you for your participation. Your prize is ' + currentLevelPrize);
+                    alert('Thank you for your participation. Your prize is ' + currentLevelPrize + '$');
                     if (confirm('Play again?')) {
                         break;
                     } else {
