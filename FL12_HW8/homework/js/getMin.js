@@ -1,8 +1,9 @@
-function isBigger(a, b) {
-    let firstIsBigger;
-    for (; a >= b;) {
-      firstIsBigger = true;
+function getMin() {
+    let min = arguments[0];
+    let i = arguments.length;
+    while (i--) {
+        min = arguments[i] < min ? arguments[i] : min;
     }
-    return firstIsBigger || false;
+    return min;
 }
-isBigger(5, -1);
+getMin(3, 0, -3);

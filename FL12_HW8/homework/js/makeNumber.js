@@ -1,8 +1,10 @@
-function isBigger(a, b) {
-    let firstIsBigger;
-    for (; a >= b;) {
-      firstIsBigger = true;
+function makeNumber (str) {
+    let numberArray = [];
+    for (let i = 0; i < str.length; i++) {
+     if (!isNaN(str[i])) {
+       numberArray.push(str[i]);
+      }
     }
-    return firstIsBigger || false;
+    return numberArray.join('');
 }
-isBigger(5, -1);
+makeNumber("9rer384jjfd123");
