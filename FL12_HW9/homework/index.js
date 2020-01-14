@@ -67,52 +67,52 @@ function flipOver(str) {
     }
     return o;
   }
-  console.log(flipOver('hey world'));
+flipOver('hey world');
 
   //6.
-  function makeListFromRange(range) {
+function makeListFromRange(range) {
     let myList = [];
     let start = range[0];
     let end = range[1];
     for (let i = start; i <= end; i++) {
-      myList.push(i);
+        myList.push(i);
     }
     return myList;
-  }
-  const l = 2;
-  const m = 7;
-  console.log(makeListFromRange([l, m]));
+}
+const l = 2;
+const m = 7;
+makeListFromRange([l, m]);
 
   //7.
-  const actors = [
-    {name: 'tommy',
-    age: 36},
-    {name: 'lee',
-    age: 28}
-  ];
-  function getArrayOfKeys() {
-   let keysArray = [];
-   for (let i = 0; i < actors.length; i++) {
-     keysArray.push(actors[i].name);
-   }
-   return keysArray;
-  }
-  console.log(getArrayOfKeys(actors, 'name'));
+const actors = [
+{name: 'tommy',
+age: 36},
+{name: 'lee',
+age: 28}
+];
+function getArrayOfKeys() {
+    let keysArray = [];
+    for (let i = 0; i < actors.length; i++) {
+        keysArray.push(actors[i].name);
+    }
+    return keysArray;
+}
+getArrayOfKeys(actors, 'name');
 
   //8.
-  function substitute(myArr) {
+function substitute(myArr) {
     let substitutedArr = [];
     let filterNum = 30;
     for (let i = 0; i < myArr.length; i++) {
-      myArr[i] > filterNum ? substitutedArr.push(myArr[i]) : substitutedArr.push('*');
+        myArr[i] > filterNum ? substitutedArr.push(myArr[i]) : substitutedArr.push('*');
     }
     return substitutedArr;
-  }
-  const n = 58;
-  const o = 14;
-  const p = 48;
-  const r = 2;
-  console.log(substitute([n, o, p, r]));
+}
+const n = 58;
+const o = 14;
+const p = 48;
+const r = 2;
+substitute([n, o, p, r]);
 
   //9.
 const date = new Date(2019, 0, 2);
@@ -122,4 +122,7 @@ function getPastDate(date, daysAgo) {
     return dateClone.getDate();
 }
 const subtractedDays = 365; 
-alert( getPastDate(date, subtractedDays) ); 
+getPastDate(date, subtractedDays); 
+
+let myDate = new Date('6/15/2018 09:15:00');
+console.log(myDate);
