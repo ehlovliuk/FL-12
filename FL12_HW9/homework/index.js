@@ -114,7 +114,7 @@ const p = 48;
 const r = 2;
 substitute([n, o, p, r]);
 
-  //9.
+//9.
 const date = new Date(2019, 0, 2);
 function getPastDate(date, daysAgo) {
     let dateClone = new Date(date);
@@ -124,5 +124,16 @@ function getPastDate(date, daysAgo) {
 const subtractedDays = 365; 
 getPastDate(date, subtractedDays); 
 
-let myDate = new Date('6/15/2018 09:15:00');
-console.log(myDate);
+//10.
+function formatDate(d) {
+    let datestring =
+    d.getFullYear() + '/'
+    + (d.getMonth() + 1) + '/'
+    + d.getDate() + ' '
+    + (d.getHours() < 10 ? '0' + d.getHours() : d.getHours()) + ':'
+     + (d.getMinutes() < 10 ? '0' + d.getMinutes() : d.getMinutes());
+    return datestring;
+}
+  
+formatDate(new Date('6/15/2018 09:15:00')); 
+formatDate(new Date()); 
